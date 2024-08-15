@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('layout', function () {
-    return view('layout.app');
-})->name('layout');
-
 Route::controller(UserController::class)->prefix('user')->group(function() {
     Route::get('/', 'index')->name('pegawai');
     Route::get('tambah', 'tambah')->name('pegawai.tambah');

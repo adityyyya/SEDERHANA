@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->bigInteger('nip');
-            $table->enum('jabatan', ['admin', 'lurah', 'sekertaris lurah']);
+            $table->string('jabatan');
             $table->date('tgl_lahir');
             $table->bigInteger('gajih');
             $table->rememberToken();

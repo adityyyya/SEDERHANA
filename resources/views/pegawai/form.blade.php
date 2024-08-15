@@ -24,7 +24,7 @@
                         <option value="lurah" {{ isset($user) && $user->jabatan == 'lurah' ? 'selected' : '' }}>Lurah</option>
                         <option value="sekretaris lurah" {{ isset($user) && $user->jabatan == 'sekretaris lurah' ? 'selected' : '' }}>Sekretaris Lurah</option>
                     </select>
-                </div>                    
+                </div>                                   
                 <div class="form-group">
                     <label for="tgl_lahir">Tanggal Lahir</label>
                     <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir" value="{{ isset($user) ? $user->tgl_lahir : '' }}">
